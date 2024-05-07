@@ -125,7 +125,7 @@ Aktuell widme ich mich der Herausforderung den Kolleginnen und Maschinen bei [de
 
 Zuletzt arbeitete ich für das [Datenverarbeitungszentrum Mecklenburg-Vorpommern](https://www.dvz-mv.de/). Hier befasste ich mich u.a. mit der Bereitstellung von Geoinformationen des Landes zur Verwendung durch Bürger, Institutionen und Unternehmen.
 
-Davor war ich an der Universität Rostock für das <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekt <a href="https://www.opengeoedu.de/"><img style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> tätig. Hier verantwortete ich unter anderem den reibungslosen Betrieb und die (Weiter-)Entwicklung der Lernumgebung zum Offenen Online-Kurs OpenGeoEdu.
+Davor war ich an der Universität Rostock für das <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekt <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> tätig. Hier verantwortete ich unter anderem den reibungslosen Betrieb und die (Weiter-)Entwicklung der Lernumgebung zum Offenen Online-Kurs OpenGeoEdu.
 
 Nach dem Studium der Geographie an der Universität Greifswald arbeitete ich freiberuflich u. a. als GIS-Analyst, Consultant, Projekt-Assistent und Kartierer.
 {style="text-align: justify;"}
