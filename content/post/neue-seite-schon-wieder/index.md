@@ -17,6 +17,8 @@ image:
   focal_point: "top"
   preview_only: false
 
+editable: true
+
 projects: [it]
 ---
 **Das project wowchemy gibts so nicht mehr...**
