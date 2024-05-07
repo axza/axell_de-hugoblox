@@ -121,11 +121,6 @@ social:
 highlight_name: true
 ---
 
-Aktuell widme ich mich der Herausforderung den Kolleginnen und Maschinen bei [deeeper.technology GmbH](https://www.deeeper-technology.de) möglichst schnellen Zugriff auf die zentral verwalteten Geodaten zu bieten.
+In meiner aktuellen Position bei der [deeeper.technology GmbH](https://www.deeeper-technology.de) stelle ich sicher, dass Mitarbeiterinnen und Maschinen des Unternehmens schnell und effizient auf zentral verwaltete Geodaten zugreifen können. Meine Expertise liegt in der Optimierung des Zugriffs auf diese Daten.
 
-Zuletzt arbeitete ich für das [Datenverarbeitungszentrum Mecklenburg-Vorpommern](https://www.dvz-mv.de/). Hier befasste ich mich u.a. mit der Bereitstellung von Geoinformationen des Landes zur Verwendung durch Bürger, Institutionen und Unternehmen.
-
-Davor war ich an der Universität Rostock für das <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekt <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> tätig. Hier verantwortete ich unter anderem den reibungslosen Betrieb und die (Weiter-)Entwicklung der Lernumgebung zum Offenen Online-Kurs OpenGeoEdu.
-
-Nach dem Studium der Geographie an der Universität Greifswald arbeitete ich freiberuflich u. a. als GIS-Analyst, Consultant, Projekt-Assistent und Kartierer.
-{style="text-align: justify;"}
+Zuvor war ich beim [Datenverarbeitungszentrum Mecklenburg-Vorpommern](https://www.dvz-mv.de/) tätig, wo ich für die Bereitstellung von Geoinformationen für Bürger, Institutionen und Unternehmen verantwortlich war. Darüber hinaus habe ich an der Universität Rostock im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg">OpenGeoEdu</a> die Lernumgebung für den Offenen Online-Kurs OpenGeoEdu entwickelt und betrieben. Meine freiberufliche Tätigkeit umfasste Aufgaben als GIS-Analyst, Consultant, Projekt-Assistent und Kartograph.
