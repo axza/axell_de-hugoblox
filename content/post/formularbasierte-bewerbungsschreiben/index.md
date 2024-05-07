@@ -47,7 +47,7 @@ Die weiteren Unterlagen wie Lebenslauf, Zeugnisse und Beurteilungen werden ebenf
 
 Nun fügen wir in das Anschreiben Platzhalter ein. Diese sind in dem Format `{{$Spaltenname}}` einzusetzen. Die Variablen entsprechen denen der Antwortentabelle. Ich habe folgende Variablen in meinem Formular verwendet:
 
-```
+```sh
 {{Adresse}}
 {{heutiges datum}}  
 
@@ -93,7 +93,7 @@ Für die Zusammenführung öffen wir die Antwortentabelle und öffnen dort unter
 ![Skripteditor](skripteditor.png)
 
 Dort kopieren wir folgendes Skript hinein:
-
+```javascript
     function myFunction(e) {
       //e.values (array) Zuordnung der Spalten in den Formularantworten
       var zeitstempel = e.values[0];
@@ -111,18 +111,22 @@ Dort kopieren wir folgendes Skript hinein:
       //file ist das Vorlagedokument, festgelegt mittels ID
       var file = DriveApp.getFileById('ID-des-Vorlagedokuments'); 
       
-      //Wir erstellen eine Kopie der Vorlage, geben ihr einen Namen und teilen ihr mit, in welchem Ordner sie kopiert werden soll
-      //file.makeCopy gibt ein Google Drive-Dateiobjekt zurück
+      // Wir erstellen eine Kopie der Vorlage, 
+      // geben ihr einen Namen und teilen ihr mit, 
+      // in welchem Ordner sie kopiert werden soll
+      // file.makeCopy gibt ein Google Drive-Dateiobjekt zurück
       var folder = DriveApp.getFolderById('Zielordner-ID-inDrive-wo-generierte-Dokumente-abgelegt-werden-sollen')
       var copy = file.makeCopy('Dateiname-des-neuen-Dokuments' + '_' + stellentitel + '_' + heutigesdatum, folder); 
       
-      //Sobald wir die neue Datei erstellt haben, müssen wir sie als Dokument öffnen mittels ihrer ID
+      // Sobald wir die neue Datei erstellt haben,
+      // müssen wir sie als Dokument öffnen, mittels ihrer ID
       var doc = DocumentApp.openById(copy.getId()); 
       
-      //Da sich alles, was wir ändern müssen, im Dokumentbody steht, greifen wir darauf zu
+      // Da sich alles, was wir ändern müssen, im Dokumentbody steht,
+      //  greifen wir darauf zu
       var body = doc.getBody(); 
       
-      //Dann rufen wir alle Textersetzungen auf
+      // Dann rufen wir alle Textersetzungen auf
       body.replaceText('{{Adresse}}', adresse); 
       body.replaceText('{{heutiges datum}}', heutigesdatum); 
       body.replaceText('{{Stellentitel}}', stellentitel);  
@@ -134,9 +138,11 @@ Dort kopieren wir folgendes Skript hinein:
       body.replaceText('{{Jahresbrutto}}', jahresbrutto); 
       body.replaceText('{{trackingurl}}', firma);
       
-      //Zuletzt speichern und schließen wir das Dokument, um unsere Änderungen beizubehalten
+      //Zuletzt speichern und schließen wir das Dokument,
+      // um unsere Änderungen beizubehalten
       doc.saveAndClose(); 
     }
+```
 
 Das sollte dann so aussehen:
 ![Skripteditor offen](skripteditor-eingabe.png)
