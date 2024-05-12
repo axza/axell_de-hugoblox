@@ -151,7 +151,7 @@ sections:
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
         - certificate_url: "uploads/Medien-und-Urheberrecht(DsGVO).pdf"
-          organization: "Uni Rostock"
+          organization: "Universität-Rostock"
           organization_url: "https://www.uni-rostock.de/weiterbildung/"
           title: "Medien- und Urheberrecht (DsGVO/GDPR)"
           url: ""
