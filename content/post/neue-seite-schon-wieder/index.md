@@ -29,8 +29,10 @@ Unter [Hugo Blox](https://hugoblox.com/) ist das Projekt zu finden und verhält 
 
 Die Grundlage bildet [HUGO](https://gohugo.io/), das in [golang](https://go.dev/) geschrieben eine statische Seite erzeugt.
 
-Hugo Blox (https://docs.hugoblox.com/) lässt sich mit ein paar dateien (yaml 🥲) aus vorefertigten layout blöcken zusammenstecken - wie klemmbausteine.
+Hugo Blox (https://docs.hugoblox.com/) lässt sich mit ein paar dateien (yaml 🥲) aus vorgefertigten layout blöcken zusammenstecken - wie klemmbausteine®️.
 
-und wenn ich das schonmal anfasse habe ich auch gleichmal *bye bye, **netlify*** gesagt da die Seite super mit den gh-pages auskommt.
+und wenn ich das schonmal anfasse habe ich auch gleichmal *bye bye, **netlify*** gesagt da die Seite auch "super" mit den gh-pages auskommt.
+
+![image](https://github.com/axza/axell_de-hugoblox/assets/10170631/551b27a8-a21c-497a-a8ba-faffba89b022)
 
 Performancewunder habe ich keine erwartet, dennoch für meine kleine seite völlig ausreichend. danke github🤗
