@@ -115,7 +115,7 @@ social:
   # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: uploads/ALZ_CV2024_enEN.pdf
+    link: uploads/ALZ_CV2024_deDE.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
