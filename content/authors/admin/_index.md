@@ -120,7 +120,14 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
+Ich bin Axel Lorenzen-Zabel, ein Mensch vom Planet Erde und vielseitiger Diplom-Geograph mit einer Leidenschaft für die Schnittstellen von Mobilität, Technologie und Gesellschaft. 
 
-In meiner aktuellen Position bei [deeeper.technology GmbH](https://www.deeeper-technology.de) stelle ich vor allem sicher, dass MitarbeiterInnen und Maschinen des Unternehmens schnell und effizient auf zentral verwaltete Geodaten zugreifen können.
+Meine berufliche Reise führte mich durch verschiedene spannende Stationen:
 
-Zuvor war ich beim [Datenverarbeitungszentrum Mecklenburg-Vorpommern](https://www.dvz-mv.de/) tätig, wo ich für die Bereitstellung von Geoinformationen für Bürger, Institutionen und Unternehmen verantwortlich war. Darüber hinaus habe ich an der Universität Rostock im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> die Lernumgebung für den Offenen Online-Kurs OpenGeoEdu entwickelt und betrieben. Meine freiberufliche Tätigkeit umfasste Aufgaben als GIS-Analyst, Consultant, Projekt-Assistent und Kartograph.
+* **deeeper.technology GmbH:** Aktuell optimiere ich bei deepeer.technology den Zugang zu Geodaten, um sicherzustellen, dass sowohl Mitarbeiter als auch Maschinen effizient damit arbeiten können.
+* **Datenverarbeitungszentrum Mecklenburg-Vorpommern:** Als Experte für Geoinformationen stellte ich hier öffentliche Geodienste bereit und sorgte dafür, dass wichtige Daten für Bürger, Institutionen und Unternehmen zugänglich waren.
+* **Universität Rostock:** Hier entwickelte ich im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> eine innovative Lernplattform für Geoinformationen.
+
+Meine Erfahrungen in Forschung, Lehre, öffentlicher Dienst und Industrie ermöglichen es mir, komplexe Herausforderungen aus verschiedenen Blickwinkeln zu betrachten und maßgeschneiderte Lösungen zu entwickeln. 
+
+Lass uns gemeinsam die Zukunft gestalten!
