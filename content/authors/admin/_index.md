@@ -120,7 +120,7 @@ social:
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
-Ich bin Axel Lorenzen-Zabel, ein Mensch vom Planet Erde und vielseitiger Diplom-Geograph mit einer Leidenschaft für die Schnittstellen von Mobilität, Technologie und Gesellschaft. 
+Ich bin Axel Lorenzen-Zabel, ein vielseitiger Diplom-Geograph mit einer Leidenschaft für die Schnittstellen von Mobilität, Technologie und Gesellschaft. 
 
 Meine berufliche Reise führte mich durch verschiedene spannende Stationen:
 
