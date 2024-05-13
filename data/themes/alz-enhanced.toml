@@ -1,0 +1,33 @@
+# Theme metadata
+name = "alz-enhanced"
+
+[light]
+  # Primary
+  primary = "#2196f3"  # Kräftiges Blau für Akzente
+
+  # Menu
+  menu_primary = "#f5f5f5"  # Helles Grau für den Menü-Hintergrund
+  menu_text = "#333"       # Dunkles Grau für Menü-Text (gute Lesbarkeit)
+  menu_text_active = "#2196f3"  # Primärfarbe für aktiven Menüpunkt
+  menu_title = "#2b2b2b"   # Dunkleres Grau für den Menü-Titel
+
+  # Home sections
+  home_section_odd = "#fff"    # Weiß für ungerade Abschnitte
+  home_section_even = "#f8f8f8"  # Sehr helles Grau für gerade Abschnitte
+
+[dark]
+  # Primary
+  primary = "#b4d455"  # Primärfarbe im dunklen Modus
+
+  # Menu
+  menu_primary = "#212121"  # Dunkles Grau für den Menü-Hintergrund
+  menu_text = "#eee"       # Helles Grau für Menü-Text (gute Lesbarkeit)
+  menu_text_active = "#b4d455"  # Primärfarbe für aktiven Menüpunkt
+  menu_title = "#f5f5f5"   # Helles Grau für den Menü-Titel
+
+  # Home sections
+  home_section_odd = "#282828"  # Dunkleres Grau für ungerade Abschnitte
+  home_section_even = "#303030"  # Etwas helleres Grau für gerade Abschnitte
+
+  link = "#b4d455"       # Linkfarbe im dunklen Modus
+  link_hover = "#b4d455"  # Hover-Farbe im dunklen Modus
