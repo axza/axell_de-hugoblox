@@ -6,8 +6,8 @@
 # Appearance
 
 appearance:
-  theme_day: alz
-  theme_night: alz
+  theme_day: alz-enhanced
+  theme_night: alz-enhanced
   font: mr robot
   font_size: S
 
