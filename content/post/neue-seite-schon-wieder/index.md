@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Neue Seite - schon wieder"
-subtitle: ""
+subtitle: "Von Netlify zu GitHub Pages: Wie ich meine Website einfacher und schneller gemacht habe (mit Hugo Blox)"
 summary: "Warum ich Netlify den Rücken kehre und auf GitHub Pages setze (mit Hugo Blox)"
 authors: [admin]
 tags: [hugo, GitHub, academic, foss, golang]
@@ -35,6 +35,9 @@ Wenn ich die Seite schonmal anfasse habe ich auch gleichmal *bye bye, **netlify*
 
 hier die GitHub action, die das bauen und das deployment nach gh-pages übernimmt:
 
+<details>
+  <summary>publish.yaml</summary>
+  
 ```yaml
 name: Deploy website to GitHub Pages
 
@@ -107,6 +110,7 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 ```
+</details>
 
 ![image](https://github.com/axza/axell_de-hugoblox/assets/10170631/551b27a8-a21c-497a-a8ba-faffba89b022)
 
