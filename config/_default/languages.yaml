@@ -6,17 +6,21 @@
 de:
   languageCode: de-de
   # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  contentDir: content/de
 
 # Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
+en:
+  languageCode: en-us
+  contentDir: content/en
 #  title: Chinese website title...
 #  params:
 #    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+  menu:
+    main:
+      - name: About
+        url: '#about'
+        weight: 1
+      - name: Contact
+        url: '#contact'
+        weight: 60
+

@@ -8,7 +8,7 @@
 appearance:
   theme_day: alz-enhanced
   theme_night: alz-enhanced
-  font: mr robot
+  font: Cyberpunk
   font_size: S
 
 # SEO
@@ -56,7 +56,7 @@ footer:
 
 locale:
   date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  time_format: '15:04'
   address_format: en-us
 
 # Site features
