@@ -27,6 +27,8 @@ links:
    url: https://github.com/klassecloud/
    icon_pack: fab
    icon: github
+ - name: URL
+   url: https://www.klasse.cloud/
 
 url_code: ""
 url_pdf: ""
