@@ -11,91 +11,91 @@ sections:
       title: Moin, Moin & Hallo 👋
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-  - block: experience
-    content:
-      title: 'Experience'
-      # Date format for experience
-      #   Refer to https://docs.hugoblox.com/customization/#date-format
-      date_format: Jan 2006
-      # Experiences.
-      #   Add/remove as many `experience` items below as you like.
-      #   Required fields are `title`, `company`, and `date_start`.
-      #   Leave `date_end` empty if it's your current employer.
-      #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
-      items:
-        - title: "System Architect"
-          company: "deeeper.technology GmbH"
-          company_url: "https://deeeper-technology.de"
-          # logo_url: "https://deeeper-technology.de/wp-content/uploads/2020/07/deeeper-logo-quer-v3.svg"
-          company_logo: org-deeeper
-          date_end: ""
-          date_start: "2021-07-01"
-          location: "Rostock"
-          description: |2- 
-              Scaling and Reproducibility in ML:
-              * data and infrastructure management 
-              * Site Reliability Engineer (SRE)
-              * Database Engineer PostgreSQL 
-              * CI/CD, Infrastructure as Code
-              * Cloud Services Integration 
-              Web Maps and OGC-Web Services
-              * spatial data infrastructure
-              * System Integration
+  # - block: experience
+  #   content:
+  #     title: 'Experience'
+  #     # Date format for experience
+  #     #   Refer to https://docs.hugoblox.com/customization/#date-format
+  #     date_format: Jan 2006
+  #     # Experiences.
+  #     #   Add/remove as many `experience` items below as you like.
+  #     #   Required fields are `title`, `company`, and `date_start`.
+  #     #   Leave `date_end` empty if it's your current employer.
+  #     #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
+  #     items:
+  #       - title: "System Architect"
+  #         company: "deeeper.technology GmbH"
+  #         company_url: "https://deeeper-technology.de"
+  #         # logo_url: "https://deeeper-technology.de/wp-content/uploads/2020/07/deeeper-logo-quer-v3.svg"
+  #         company_logo: org-deeeper
+  #         date_end: ""
+  #         date_start: "2021-07-01"
+  #         location: "Rostock"
+  #         description: |2- 
+  #             Scaling and Reproducibility in ML:
+  #             * data and infrastructure management 
+  #             * Site Reliability Engineer (SRE)
+  #             * Database Engineer PostgreSQL 
+  #             * CI/CD, Infrastructure as Code
+  #             * Cloud Services Integration 
+  #             Web Maps and OGC-Web Services
+  #             * spatial data infrastructure
+  #             * System Integration
 
-        - title: "System Engineer"
-          company: "DVZ Datenverarbeitungszentrum Mecklenburg-Vorpommern GmbH"
-          company_url: "https://www.dvz-mv.de"
-          company_logo: "org-dvz"
-          date_end: "2021-06-30"
-          date_start: "2020-05-01"
-          location: "Schwerin"
-          description: |2-
-              Systemintegration Webservice:
-              * E-Government 
-              * Geoinformation
+  #       - title: "System Engineer"
+  #         company: "DVZ Datenverarbeitungszentrum Mecklenburg-Vorpommern GmbH"
+  #         company_url: "https://www.dvz-mv.de"
+  #         company_logo: "org-dvz"
+  #         date_end: "2021-06-30"
+  #         date_start: "2020-05-01"
+  #         location: "Schwerin"
+  #         description: |2-
+  #             Systemintegration Webservice:
+  #             * E-Government 
+  #             * Geoinformation
 
-        - title: "Wissenschaftlicher Mitarbeiter - OpenGeoEdu"
-          company: "Universität Rostock"
-          company_url: "https://www.auf.uni-rostock.de/professuren/a-g/geodaesie-und-geoinformatik/"
-          # logo_url: "https://www.uni-rostock.de/typo3temp/assets/_processed_/1/e/csm_rostock_logo_0afd2db082.png"
-          # logo_url: "https://www.opengeoedu.de/images/logo/oge.svg"
-          company_logo: org-unihro
-          date_end: "2020-04-30"
-          date_start: "2017-07-01"
-          location: "Rostock"
-          description: |2-
-              Forschung und technische Verantwortung im [Projekt OpenGeoEdu](https://www.opengeoedu.de)
+  #       - title: "Wissenschaftlicher Mitarbeiter - OpenGeoEdu"
+  #         company: "Universität Rostock"
+  #         company_url: "https://www.auf.uni-rostock.de/professuren/a-g/geodaesie-und-geoinformatik/"
+  #         # logo_url: "https://www.uni-rostock.de/typo3temp/assets/_processed_/1/e/csm_rostock_logo_0afd2db082.png"
+  #         # logo_url: "https://www.opengeoedu.de/images/logo/oge.svg"
+  #         company_logo: org-unihro
+  #         date_end: "2020-04-30"
+  #         date_start: "2017-07-01"
+  #         location: "Rostock"
+  #         description: |2-
+  #             Forschung und technische Verantwortung im [Projekt OpenGeoEdu](https://www.opengeoedu.de)
 
-              * Konzeption
-              * Evaluation - LMS, CMS
-              * DevOps - CI, DB
+  #             * Konzeption
+  #             * Evaluation - LMS, CMS
+  #             * DevOps - CI, DB
 
-        - title: "GIS-Analyst & GIS-Consultant"
-          company: "wpd offshore solutions GmbH"
-          company_url: "https://wpd.de"
-          company_logo: "org-wpd"
-          date_end: "2016-12-31"
-          date_start: "2016-06-01"
-          location: "Rostock"
-          description: |2-
-              GIS-Analysen, Kartographie und Visualisierungen für Genehmigungsverfahren von Offshore-Windparks in nationalen, und internationalen Projekten.
-              * Geodatenmanagement
-              * Datenrecherche
-              * Lage- und Baupläne
-              * Planungsdokumente für Genehmigungsverfahren
+  #       - title: "GIS-Analyst & GIS-Consultant"
+  #         company: "wpd offshore solutions GmbH"
+  #         company_url: "https://wpd.de"
+  #         company_logo: "org-wpd"
+  #         date_end: "2016-12-31"
+  #         date_start: "2016-06-01"
+  #         location: "Rostock"
+  #         description: |2-
+  #             GIS-Analysen, Kartographie und Visualisierungen für Genehmigungsverfahren von Offshore-Windparks in nationalen, und internationalen Projekten.
+  #             * Geodatenmanagement
+  #             * Datenrecherche
+  #             * Lage- und Baupläne
+  #             * Planungsdokumente für Genehmigungsverfahren
 
-        - title: "LUCAS Surveyor"
-          company: "EFTAS.GeoIT/Eurostat"
-          company_url: "https://www.eftas.de/"
-          # logo_url: "https://www.eftas.de/images/branding.png"
-          company_logo: org-eftas
-          date_end: "2015-11-30"
-          date_start: "2015-04-01"
-          description: "<u>L</u>and <u>U</u>se and <u>C</u>overage <u>A</u>rea frame <u>S</u>urvey\n  "
-          location: "Mecklenburg-Vorpommern"
+  #       - title: "LUCAS Surveyor"
+  #         company: "EFTAS.GeoIT/Eurostat"
+  #         company_url: "https://www.eftas.de/"
+  #         # logo_url: "https://www.eftas.de/images/branding.png"
+  #         company_logo: org-eftas
+  #         date_end: "2015-11-30"
+  #         date_start: "2015-04-01"
+  #         description: "<u>L</u>and <u>U</u>se and <u>C</u>overage <u>A</u>rea frame <u>S</u>urvey\n  "
+  #         location: "Mecklenburg-Vorpommern"
           
-    design:
-      columns: '2'
+  #   design:
+  #     columns: '2'
 #   - block: accomplishments
 #     content:
 #       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
