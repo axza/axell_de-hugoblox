@@ -126,7 +126,7 @@ Meine berufliche Reise führte mich durch verschiedene spannende Stationen:
 
 * **deeeper.technology GmbH:** Aktuell optimiere ich bei [deeeper.technology](https://www.deeeper-technology.de) den Zugang zu Geodaten, um sicherzustellen, dass sowohl MitarbeiterInnen als auch Maschinen effizient damit arbeiten können.
 * **Datenverarbeitungszentrum Mecklenburg-Vorpommern:** Als Experte für Geoinformationen stellte ich hier öffentliche Geodienste bereit und sorgte dafür, dass wichtige Daten für Bürger, Institutionen und Unternehmen zugänglich waren.
-* **Universität Rostock:** Hier entwickelte ich im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> eine innovative Lernplattform für Geoinformationen.
+* **Universität Rostock:** Hier entwickelte ich im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> eine innovative Lernplattform für die Förderung und die Nutzung offener Daten und offener Software in raumbezogenen Studiengängen.
 
 Meine Erfahrungen in Forschung, Lehre, öffentlicher Dienst und Industrie ermöglichen es mir, komplexe Herausforderungen aus verschiedenen Blickwinkeln zu betrachten und maßgeschneiderte Lösungen zu entwickeln. 
 
