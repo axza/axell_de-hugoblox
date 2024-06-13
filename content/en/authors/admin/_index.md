@@ -36,7 +36,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-  - course: Geographie, Geologie und Kommunikationswissenschaft
+  - course: Geography, Geology und Communication Science
     institution: Universität Greifswald
     year: 2014
 
@@ -88,12 +88,12 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/twoeLLph
-    label: Follow me on Twitter
-    display:
-      header: false
+  #- icon: twitter
+  #  icon_pack: fab
+  #  link: https://twitter.com/twoeLLph
+  #  label: Follow me on Twitter
+  #  display:
+  #    header: false
   - icon: mastodon
     icon_pack: fab
     link: https://mastodon.social/@oeLLph
@@ -113,20 +113,20 @@ social:
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/ALZ_CV2024_enEN.pdf
+  #- icon: cv
+  #  icon_pack: ai
+  #  link: uploads/ALZ_CV2024_enEN.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 I am Axel Lorenzen-Zabel, a versatile geography graduate with a passion for the interfaces between mobility, technology and society.
 
-My professional journey has taken me through various exciting stations:
+<!-- My professional journey has taken me through various exciting stations:
 
 * **deeeper.technology GmbH**: I am currently optimizing access to geodata at [deeeper.technology](https://www.deeeper-technology.de) to ensure that both employees and machines can work with it efficiently.
 * **Datenverarbeitungszentrum Mecklenburg-Vorpommern**: As an expert in geoinformation, I provided public geoservices here and ensured that important data was accessible to citizens, institutions and companies.
-* **University of Rostock**: Here, as part of the <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-project <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a>, I developed an innovative learning platform for the promotion and use of open data and open software in geospatial study programs.
+* **University of Rostock**: Here, as part of the <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-project <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a>, I developed an innovative learning platform for the promotion and use of open data and open software in geospatial study programs. -->
 
 My experience in research, teaching, public service and industry enables me to look at complex challenges from different angles and develop customized solutions.
 

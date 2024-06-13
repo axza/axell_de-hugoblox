@@ -251,7 +251,7 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: academic@axell.de
       phone: +49 15678 598 489
-      appointment_url: 'https://calendar.app.google/HGgFqNekAyHfbQwb8'
+      #appointment_url: 'https://calendar.app.google/HGgFqNekAyHfbQwb8'
 #      address:
 #        street: 450 Serra Mall
 #        city: Stanford
@@ -268,10 +268,10 @@ sections:
 #        latitude: '37.4275'
 #        longitude: '-122.1697'  
       contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: twoeLLph
-          link: 'https://twitter.com/twoeLLph'
+        #- icon: twitter
+        #  icon_pack: fab
+        #  name: twoeLLph
+        #  link: 'https://twitter.com/twoeLLph'
         - icon: user-shield
           icon_pack: fas
           name: '@oellph_137:matrix.org'

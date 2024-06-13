@@ -88,12 +88,15 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
-  - icon: twitter
-    icon_pack: fab
-    link: https://twitter.com/twoeLLph
-    label: Follow me on Twitter
-    display:
-      header: false
+ # - icon: bluesky
+ #   icon_pack: fab
+ #   link: "https://bluesky.social"
+  #- icon: twitter
+  #  icon_pack: fab
+  #  link: https://twitter.com/twoeLLph
+  #  label: Follow me on Twitter
+  #  display:
+  #    header: false
   - icon: mastodon
     icon_pack: fab
     link: https://mastodon.social/@oeLLph
@@ -113,21 +116,21 @@ social:
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/ALZ_CV2024_deDE.pdf
+  #- icon: cv
+  #  icon_pack: ai
+  #  link: uploads/ALZ_CV2024_deDE.pdf
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 Ich bin Axel Lorenzen-Zabel, ein vielseitiger Diplom-Geograph mit einer Leidenschaft für die Schnittstellen von Mobilität, Technologie und Gesellschaft. 
 
-Meine berufliche Reise führte mich durch verschiedene spannende Stationen:
+<!-- Meine berufliche Reise führte mich durch verschiedene spannende Stationen:
 
-* **deeeper.technology GmbH:** Aktuell optimiere ich bei [deeeper.technology](https://www.deeeper-technology.de) den Zugang zu Geodaten, um sicherzustellen, dass sowohl Mitarbeiter:innen als auch Maschinen effizient damit arbeiten können.
+* **deeeper.technology GmbH:** Ich optimierte bei [deeeper.technology](https://www.deeeper-technology.de) den Zugang zu Geodaten und machine learning Ressourcen um sicherzustellen, dass sowohl Mitarbeiter:innen als auch Maschinen effizient damit arbeiten können.
 * **Datenverarbeitungszentrum Mecklenburg-Vorpommern:** Als Experte für Geoinformationen stellte ich hier öffentliche Geodienste bereit und sorgte dafür, dass wichtige Daten für Bürger:innen, Institutionen und Unternehmen zugänglich waren.
-* **Universität Rostock:** Hier entwickelte ich im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> eine innovative Lernplattform für die Förderung und die Nutzung offener Daten und offener Software in raumbezogenen Studiengängen.
+* **Universität Rostock:** Hier entwickelte ich im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> eine innovative Lernplattform für die Förderung und die Nutzung offener Daten und offener Software in raumbezogenen Studiengängen. -->
 
-Meine Erfahrungen in Forschung, Lehre, öffentlichem Dienst und Industrie ermöglichen es mir, komplexe Herausforderungen aus verschiedenen Blickwinkeln zu betrachten und maßgeschneiderte Lösungen zu entwickeln. 
+Meine Erfahrungen in Forschung und Lehre, öffentlichem Dienst sowie Industrie ermöglichen es mir, komplexe Herausforderungen aus verschiedenen Blickwinkeln zu betrachten und maßgeschneiderte Lösungen zu entwickeln. 
 
 Lass uns gemeinsam die Zukunft gestalten!

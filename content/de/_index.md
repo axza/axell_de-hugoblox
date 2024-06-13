@@ -64,12 +64,19 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: "Senior DevOps Engineer"
+          company: "‍Innovations- und Digitalagentur (ida) GmbH"
+          company_url: "https://ida.me"
+          company_logo: "org-ida"
+          date_start: "2024-07-01"
+          date_end: ""
+          location: "Rostock, Leipzig"
         - title: "System Architect"
           company: "deeeper.technology GmbH"
           company_url: "https://deeeper-technology.de"
           # logo_url: "https://deeeper-technology.de/wp-content/uploads/2020/07/deeeper-logo-quer-v3.svg"
           company_logo: org-deeeper
-          date_end: ""
+          date_end: "2024-06-15"
           date_start: "2021-07-01"
           location: "Rostock"
           description: |2- 
@@ -292,7 +299,7 @@ sections:
       # Contact (add or remove contact options as necessary)
       email: academic@axell.de
       phone: +49 15678 598 489
-      appointment_url: 'https://calendar.app.google/HGgFqNekAyHfbQwb8'
+      #appointment_url: 'https://calendar.app.google/HGgFqNekAyHfbQwb8'
 #      address:
 #        street: 450 Serra Mall
 #        city: Stanford
@@ -309,10 +316,10 @@ sections:
 #        latitude: '37.4275'
 #        longitude: '-122.1697'  
       contact_links:
-        - icon: twitter
-          icon_pack: fab
-          name: twoeLLph
-          link: 'https://twitter.com/twoeLLph'
+        #- icon: twitter
+        #  icon_pack: fab
+        #  name: twoeLLph
+        #  link: 'https://twitter.com/twoeLLph'
         - icon: user-shield
           icon_pack: fas
           name: '@oellph_137:matrix.org'
