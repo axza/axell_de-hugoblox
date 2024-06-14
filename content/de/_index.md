@@ -79,7 +79,9 @@ sections:
           date_end: "2024-06-15"
           date_start: "2021-07-01"
           location: "Rostock"
-          description: |2- 
+          description: |2-
+              Ich optimierte bei deeeper.technology den Zugang zu Geodaten und machine learning Ressourcen um sicherzustellen, dass sowohl Mitarbeiter:innen als auch Maschinen effizient damit arbeiten können.
+    
               Scaling and Reproducibility in ML:
               * data and infrastructure management 
               * Site Reliability Engineer (SRE)
@@ -98,7 +100,9 @@ sections:
           date_start: "2020-05-01"
           location: "Schwerin"
           description: |2-
-              Systemintegration Webservice:
+            Als Experte für Geoinformationen stellte ich hier öffentliche Geodienste bereit und sorgte dafür, dass wichtige Daten für Bürger:innen, Institutionen und Unternehmen zugänglich waren.
+
+            Systemintegration Webservice:
               * E-Government 
               * Geoinformation
 
@@ -112,7 +116,9 @@ sections:
           date_start: "2017-07-01"
           location: "Rostock"
           description: |2-
-              Forschung und technische Verantwortung im [Projekt OpenGeoEdu](https://www.opengeoedu.de)
+            Hier entwickelte ich im Rahmen des <a href="https://bmdv.bund.de/goto?id=351066">mFUND</a>-Projekts <a href="https://www.opengeoedu.de/"><img alt="small opengeoedu logo" style="display:inline;margin:auto" width="20" src="https://www.opengeoedu.de/images/logo/oge.svg"> OpenGeoEdu</a> eine innovative Lernplattform für die Förderung und die Nutzung offener Daten und offener Software in raumbezogenen Studiengängen.
+
+             Forschung und technische Verantwortung im [Projekt OpenGeoEdu](https://www.opengeoedu.de)
 
               * Konzeption
               * Evaluation - LMS, CMS
