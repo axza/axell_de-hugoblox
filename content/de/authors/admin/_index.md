@@ -88,8 +88,7 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
-  - icon: bluesky
-    icon_pack: brands
+  - icon: brands/bluesky
     link: "https://bsky.app/profile/axell.de"
   #- icon: twitter
   #  icon_pack: fab
