@@ -88,9 +88,9 @@ social:
   - icon: envelope
     icon_pack: fas
     link: '/#contact'
- # - icon: bluesky
- #   icon_pack: fab
- #   link: "https://bluesky.social"
+  - icon: bluesky
+    icon_pack: fab
+    link: "https://bsky.app/profile/axell.de"
   #- icon: twitter
   #  icon_pack: fab
   #  link: https://twitter.com/twoeLLph
