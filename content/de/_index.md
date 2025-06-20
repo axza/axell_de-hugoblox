@@ -173,7 +173,7 @@ sections:
           description: ""
         - certificate_url: ""
           organization: "BMVI"
-          organization_url: "https://bmdv.bund.de/SharedDocs/DE/Artikel/DG/mfund-vierter-data-run.html?nn=12830"
+          organization_url: "https://web.archive.org/web/20240715141207/https://bmdv.bund.de/SharedDocs/DE/Artikel/DG/mfund-vierter-data-run.html?nn=12830"
           title: "Auszeichnung \"Digitale Fahrrad-Hacks\""
           url: 
           #url: ""
@@ -182,7 +182,7 @@ sections:
           description: "4th BMVI-DataRun ist ein Open Data Hackathon des Bundesministeriums für Verkehr und digitale Infrastruktur"
         - certificate_url: ""
           organization: "BMVI"
-          organization_url: "https://bmdv.bund.de/SharedDocs/DE/Artikel/DG/mfund-vierter-data-run.html?nn=12830"
+          organization_url: "https://web.archive.org/web/20240715141207/https://bmdv.bund.de/SharedDocs/DE/Artikel/DG/mfund-vierter-data-run.html?nn=12830"
           title: "Auszeichnung \"Publikumspreis\" "
           url: https://www.bmvi.de/SharedDocs/DE/Artikel/DG/mfund-vierter-bmvi-data-run.html
           date_start: "2019-03-23"
