@@ -1,0 +1,15 @@
+User-agent: *
+# Disallow crawling of taxonomy pages
+Disallow: /authors/
+Disallow: /categories/
+Disallow: /publication-types/
+Disallow: /tags/
+
+# Disallow crawling of pagination and search results
+Disallow: /page/
+Disallow: /search/
+
+# Allow all other content
+Allow: /
+
+Sitemap: https://axell.de/sitemap.xml
