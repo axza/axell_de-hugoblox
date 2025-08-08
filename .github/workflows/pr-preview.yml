@@ -29,7 +29,7 @@ jobs:
 
       - name: Build Site
         env:
-          HUGO_BASEURL: "https://axell-de.github.io/axell_de-hugoblox/pr-preview/${{ github.event.number }}/"
+          HUGO_BASEURL: "https://axza.github.io/axell_de-hugoblox/pr-preview/${{ github.event.number }}/"
         run: hugo --minify
 
       - name: Configure Pages
@@ -53,4 +53,4 @@ jobs:
           header: pr-preview-link
           message: |
             :rocket: **Preview for this PR is available at:**
-            https://axell-de.github.io/axell_de-hugoblox/pr-preview/${{ github.event.number }}/
+            https://axza.github.io/axell_de-hugoblox/pr-preview/${{ github.event.number }}/
