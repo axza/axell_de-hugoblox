@@ -6,17 +6,20 @@ env:
 on:
   pull_request:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  pull-requests: write
+
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # To push to the pr-preview branch
-      pull-requests: write # To comment on the PR
     steps:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch history for Hugo's .GitInfo and .Lastmod
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -24,36 +27,30 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
-      - uses: actions/cache@v4
-        with:
-          path: /tmp/hugo_cache_runner/
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
-          restore-keys: |
-            ${{ runner.os }}-hugomod-
-
       - name: Build Site
         env:
-          # Build to a subdirectory to avoid overwriting the root of the branch
-          HUGO_BASEURL: "https://axell-de.github.io/pr-preview/${{ github.event.number }}/"
-        run: |
-          hugo --minify
+          HUGO_BASEURL: "https://axell-de.github.io/axell_de-hugoblox/pr-preview/${{ github.event.number }}/"
+        run: hugo --minify
 
-      - name: Deploy to pr-preview branch
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload PR preview artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: pr-preview
-          publish_dir: ./public
-          # Deploy to a subdirectory named after the PR number
+          path: ./public
+
+      - name: Deploy PR Preview to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
           destination_dir: pr-preview/${{ github.event.number }}
-          # Keep the history of previews
-          keep_files: true
 
       - name: Add PR Comment with Preview Link
         uses: marocchino/sticky-pull-request-comment@v2
         with:
-          # Add a header to easily identify the comment
           header: pr-preview-link
           message: |
             :rocket: **Preview for this PR is available at:**
-            https://axell-de.github.io/pr-preview/${{ github.event.number }}/
+            https://axell-de.github.io/axell_de-hugoblox/pr-preview/${{ github.event.number }}/
