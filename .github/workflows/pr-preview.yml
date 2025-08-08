@@ -1,25 +1,17 @@
-name: PR Preview Build and Deploy
+name: Deploy PR Preview to GitHub Pages
 
 env:
-  WC_HUGO_VERSION: '0.123.3' # Using the version from netlify.toml
+  WC_HUGO_VERSION: '0.124.1'
 
 on:
   pull_request:
-    branches:
-      - main # Or whatever your default branch is
-
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages-pr-preview-${{ github.event.pull_request.number }}"
-  cancel-in-progress: true
 
 jobs:
-  build:
+  deploy:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # To push to the pr-preview branch
+      pull-requests: write # To comment on the PR
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -39,29 +31,29 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-
-      - name: Build with Hugo
+      - name: Build Site
         env:
-          HUGO_ENVIRONMENT: production
+          # Build to a subdirectory to avoid overwriting the root of the branch
+          HUGO_BASEURL: "https://axell-de.github.io/pr-preview/${{ github.event.number }}/"
         run: |
-          echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-          hugo --minify --buildFuture --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo --minify
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to pr-preview branch
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          path: ./public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: pr-preview
+          publish_dir: ./public
+          # Deploy to a subdirectory named after the PR number
+          destination_dir: pr-preview/${{ github.event.number }}
+          # Keep the history of previews
+          keep_files: true
 
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Add PR Comment with Preview Link
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          # Add a header to easily identify the comment
+          header: pr-preview-link
+          message: |
+            :rocket: **Preview for this PR is available at:**
+            https://axell-de.github.io/pr-preview/${{ github.event.number }}/
