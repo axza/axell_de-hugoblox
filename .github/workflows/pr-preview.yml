@@ -5,6 +5,7 @@ env:
 
 on:
   pull_request:
+    types: [opened, synchronize, reopened]
 
 permissions:
   contents: read
@@ -27,14 +28,15 @@ jobs:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
-      - name: Build Site
-        env:
-          HUGO_BASEURL: "https://axza.github.io/axell_de-hugoblox/pr-preview/${{ github.event.number }}/"
-        run: hugo --minify
-
       - name: Configure Pages
         id: pages
         uses: actions/configure-pages@v5
+
+      - name: Build Site
+        env:
+          HUGO_ENVIRONMENT: production
+        run: |
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/pr-preview/${{ github.event.number }}/"
 
       - name: Upload PR preview artifact
         uses: actions/upload-pages-artifact@v3
