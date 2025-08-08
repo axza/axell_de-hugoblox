@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Digitalisierung | Axel Lorenzen-Zabel</title><link>https://axell-de.github.io/pr-preview/5/tag/digitalisierung/</link><atom:link href="https://axell-de.github.io/pr-preview/5/tag/digitalisierung/index.xml" rel="self" type="application/rss+xml"/><description>Digitalisierung</description><generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>de-de</language><copyright>1986 - 2025</copyright><lastBuildDate>Mon, 03 Aug 2020 21:19:54 +0000</lastBuildDate><image><url>https://axell-de.github.io/pr-preview/5/media/sharing.jpg</url><title>Digitalisierung</title><link>https://axell-de.github.io/pr-preview/5/tag/digitalisierung/</link></image><item><title>Opengeoedu - a Massive Open Online Course on Using Open Geodata</title><link>https://axell-de.github.io/pr-preview/5/publication/isprs/</link><pubDate>Mon, 03 Aug 2020 21:19:54 +0000</pubDate><guid>https://axell-de.github.io/pr-preview/5/publication/isprs/</guid><description/></item><item><title>Projekt: Formularbasierte Bewerbungsschreiben mit Google Docs erstellen</title><link>https://axell-de.github.io/pr-preview/5/post/formularbasierte-bewerbungsschreiben/</link><pubDate>Wed, 29 Apr 2020 07:23:02 +0000</pubDate><guid>https://axell-de.github.io/pr-preview/5/post/formularbasierte-bewerbungsschreiben/</guid><description>&lt;p>Auf meiner letzten Jobsuche konnte ich einige Erfahrungen sammeln, die ich hier festhalten möchte. Eventuell helfen meine Erfahrungen anderen, die sich in vergleichbarer Situation befinden.&lt;/p>
+&lt;p>Zur Ausgangslage:&lt;/p>
+&lt;p>Meine aktuelle Projektstelle läuft planmäßig aus, daher habe ich mich im Dezember ($ t_{ 0 } $) mal über offene Stellen informiert. Mit einem Rundumschlag auf gängigen Jobaggregatoren- und Seiten, die die Geo*- und IT-Zielgruppe bedienen wie beispielsweise &lt;a href="https://de.digital-geography.com/jobs/" title="digital-geography.com" target="_blank" rel="noopener">digital-geography.com&lt;/a> oder &lt;a href="https://www.greenjobs.de/" title="greenjobs.de" target="_blank" rel="noopener">greenjobs.de&lt;/a> habe ich angefangen.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://axell-de.github.io/pr-preview/5/img/digitalgeography.jpg" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Dieser war schon sehr ergiebig. Ergänzend habe ich die handverlesenen Angebote von &lt;a href="https://gesinesjobtipps.de/" title="gesinesjobtipps.de" target="_blank" rel="noopener">gesinesjobtipps.de&lt;/a> gescannt sowie die Suchfunktion für Stellenangebote von Google durchforstet.&lt;/p>
+&lt;p>
+&lt;figure id="figure-google-jobsuche">
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://axell-de.github.io/pr-preview/5/img/googlejobs.jpg" alt="Screenshot der Google Jobsuche" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;figcaption>
+Google Jobsuche
+&lt;/figcaption>&lt;/figure>
+&lt;/p>
+&lt;h2 id="automatisierung-der-erstellung-von-bewerbungsunterlagen">Automatisierung der Erstellung von Bewerbungsunterlagen.&lt;/h2>
+&lt;p>($ t_{ 1 } $) Für die Zusammenführung meiner Bewerbungsunterlagen habe ich die Serienbrief Funktionen von Google Documents, Google Forms und Google Sheets verwendet.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://axell-de.github.io/pr-preview/5/img/dokumente.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h3 id="vorbereitung-der-dokumente">Vorbereitung der Dokumente&lt;/h3>
+&lt;p>Zuallererst habe ich ein leeres Dokument erstellt und die feststehenden Eintragung vorgenommen. Diese entsprechen denen eines Standardbriefes (eigene Anschrift, Begrüßung, Verabschiedung, Unterschrift).&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://axell-de.github.io/pr-preview/5/img/newdoc.png" alt="newdoc" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Die weiteren Unterlagen wie Lebenslauf, Zeugnisse und Beurteilungen werden ebenfalls in das Dokument eingefügt. So ist das Grundgerüst fertig.&lt;/p>
+&lt;p>Nun fügen wir in das Anschreiben Platzhalter ein. Diese sind in dem Format &lt;code>{{$Spaltenname}}&lt;/code> einzusetzen. Die Variablen entsprechen denen der Antwortentabelle. Ich habe folgende Variablen in meinem Formular verwendet:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">&lt;span class="o">{{&lt;/span>Adresse&lt;span class="o">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">{{&lt;/span>heutiges datum&lt;span class="o">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">{{&lt;/span>Stellentitel&lt;span class="o">}}&lt;/span> &lt;span class="o">{{&lt;/span>kennziffer&lt;span class="o">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">{{&lt;/span>Anrede&lt;span class="o">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">{{&lt;/span>Quelle des Stellenangebotes&lt;span class="o">}}{{&lt;/span>Stellentitel&lt;span class="o">}}&lt;/span>.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">{{&lt;/span>Anschreiben&lt;span class="o">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="o">{{&lt;/span>Arbeitsbeginn&lt;span class="o">}}&lt;/span> &lt;span class="o">{{&lt;/span>Jahr&lt;span class="o">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Im folgenden Bild sind die Platzhaltervariablen im Dokumententext zu sehen:&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://axell-de.github.io/pr-preview/5/img/jobformular.png" alt="" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h3 id="formular-erstellen">Formular erstellen&lt;/h3>
+&lt;p>erstellen wir nun ein neues Formular.
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://axell-de.github.io/pr-preview/5/img/newform.jpg" alt="Neues Formular" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Die Antworten auf die Fragen stellen wir auf das gewünschten Format um. Hier beispielsweise richten wir ein Datumsfeld ein. Die Verwendeten Fragentitel definieren die Platzhalter-Variablen
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://axell-de.github.io/pr-preview/5/img/newform-editformat.jpg" alt="Antwortenformat" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Weiter erstellen wir für jede Platzhaltervariable eine Frage.&lt;/p>
+&lt;h3 id="tabelle-mit-antworten-prüfen">Tabelle mit Antworten prüfen&lt;/h3>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Antworten in Tabelle" srcset="
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/antworten_hud5f50622cb788b0f6715bac4871db236_125889_e444f9b94a73c0c06f3f1ba485d02fc4.webp 400w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/antworten_hud5f50622cb788b0f6715bac4871db236_125889_8d99af23e9a425afde4c01cc47eacc08.webp 760w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/antworten_hud5f50622cb788b0f6715bac4871db236_125889_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://axell-de.github.io/pr-preview/5/pr-preview/5/post/formularbasierte-bewerbungsschreiben/antworten_hud5f50622cb788b0f6715bac4871db236_125889_e444f9b94a73c0c06f3f1ba485d02fc4.webp"
+width="760"
+height="222"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h3 id="vorbereitung-der-zusammenführung">Vorbereitung der Zusammenführung&lt;/h3>
+&lt;p>Für die Verknüpfung der Formulardaten und dem Dokument benötigen wir die ID des Vorlagedokuments (das mit den Platzhaltern) sowie eine ID für den Ablageort der neu erstellten Dokumente.&lt;/p>
+&lt;ul>
+&lt;li>&lt;code>ID des Vorlagedokuments&lt;/code>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="ID des Vorlagedokuments" srcset="
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/dokumentID_hu2a242c3f9524acea68723c3f2a4449ae_45654_e252b47f1299f890642b792c7eab84f5.webp 400w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/dokumentID_hu2a242c3f9524acea68723c3f2a4449ae_45654_5a1d662646cb412af92ca06c7ffb19b5.webp 760w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/dokumentID_hu2a242c3f9524acea68723c3f2a4449ae_45654_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://axell-de.github.io/pr-preview/5/pr-preview/5/post/formularbasierte-bewerbungsschreiben/dokumentID_hu2a242c3f9524acea68723c3f2a4449ae_45654_e252b47f1299f890642b792c7eab84f5.webp"
+width="760"
+height="33"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/li>
+&lt;li>&lt;code>ID des Verzeichnisses&lt;/code>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="ID des Verzeichnisses" srcset="
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/pathID_hu09fdc7bf512c7727f6e84d346d9a162c_39999_129f398ac32ea9654d4e6248ccb38ff4.webp 400w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/pathID_hu09fdc7bf512c7727f6e84d346d9a162c_39999_68bfd0b29f8dc9b71e14961822d24a25.webp 760w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/pathID_hu09fdc7bf512c7727f6e84d346d9a162c_39999_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://axell-de.github.io/pr-preview/5/pr-preview/5/post/formularbasierte-bewerbungsschreiben/pathID_hu09fdc7bf512c7727f6e84d346d9a162c_39999_129f398ac32ea9654d4e6248ccb38ff4.webp"
+width="760"
+height="37"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="skript-zur-zusammenführung">Skript zur Zusammenführung&lt;/h3>
+&lt;p>Für die Zusammenführung öffen wir die Antwortentabelle und öffnen dort unter &lt;code>Menü -&amp;gt; Skripteditor&lt;/code> den selbigen.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Skripteditor" srcset="
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor_hud7ff3c41c9e59385bbbf350b2ddff361_74064_f2f6679fadea13eece073c2bbaacbd89.webp 400w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor_hud7ff3c41c9e59385bbbf350b2ddff361_74064_7e8b0eb840ea556e12b76c122a9f5d3d.webp 760w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor_hud7ff3c41c9e59385bbbf350b2ddff361_74064_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://axell-de.github.io/pr-preview/5/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor_hud7ff3c41c9e59385bbbf350b2ddff361_74064_f2f6679fadea13eece073c2bbaacbd89.webp"
+width="760"
+height="370"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Dort kopieren wir folgendes Skript hinein:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-javascript" data-lang="javascript">&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">function&lt;/span> &lt;span class="nx">myFunction&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">e&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//e.values (array) Zuordnung der Spalten in den Formularantworten
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">zeitstempel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">heutigesdatum&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">adresse&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">quelle&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">stellentitel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">kennziffer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">anrede&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">6&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">anschreiben&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">7&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">arbeitsbeginn&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">8&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">jahresbrutto&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">9&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">firma&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">e&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">values&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">10&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//file ist das Vorlagedokument, festgelegt mittels ID
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">file&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">DriveApp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getFileById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;ID-des-Vorlagedokuments&amp;#39;&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Wir erstellen eine Kopie der Vorlage,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// geben ihr einen Namen und teilen ihr mit,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// in welchem Ordner sie kopiert werden soll
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// file.makeCopy gibt ein Google Drive-Dateiobjekt zurück
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">folder&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">DriveApp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getFolderById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Zielordner-ID-inDrive-wo-generierte-Dokumente-abgelegt-werden-sollen&amp;#39;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">copy&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">file&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">makeCopy&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;Dateiname-des-neuen-Dokuments&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s1">&amp;#39;_&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">stellentitel&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s1">&amp;#39;_&amp;#39;&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="nx">heutigesdatum&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">folder&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Sobald wir die neue Datei erstellt haben,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// müssen wir sie als Dokument öffnen, mittels ihrer ID
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">doc&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">DocumentApp&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">openById&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">copy&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getId&lt;/span>&lt;span class="p">());&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Da sich alles, was wir ändern müssen, im Dokumentbody steht,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// greifen wir darauf zu
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="kd">var&lt;/span> &lt;span class="nx">body&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nx">doc&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">getBody&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">// Dann rufen wir alle Textersetzungen auf
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{Adresse}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">adresse&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{heutiges datum}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">heutigesdatum&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{Stellentitel}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">stellentitel&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{kennziffer}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">kennziffer&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{Anrede}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">anrede&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{Quelle des Stellenangebotes}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">quelle&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{Anschreiben}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">anschreiben&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{Arbeitsbeginn}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">arbeitsbeginn&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{Jahresbrutto}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">jahresbrutto&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">body&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">replaceText&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s1">&amp;#39;{{trackingurl}}&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">firma&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="c1">//Zuletzt speichern und schließen wir das Dokument,
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="c1">// um unsere Änderungen beizubehalten
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">doc&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">saveAndClose&lt;/span>&lt;span class="p">();&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Das sollte dann so aussehen:
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Skripteditor offen" srcset="
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor-eingabe_hu563e8f904d6914ebd30686614b399337_284333_757f21aa527c7f7dea5309cd662c9e41.webp 400w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor-eingabe_hu563e8f904d6914ebd30686614b399337_284333_72e2d91bfaf62dbc1f692e8266012e0c.webp 760w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor-eingabe_hu563e8f904d6914ebd30686614b399337_284333_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://axell-de.github.io/pr-preview/5/pr-preview/5/post/formularbasierte-bewerbungsschreiben/skripteditor-eingabe_hu563e8f904d6914ebd30686614b399337_284333_757f21aa527c7f7dea5309cd662c9e41.webp"
+width="725"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;h3 id="probieren-wir-es-aus">Probieren wir es aus&lt;/h3>
+&lt;p>Öffnen wir die Vorschau für das Formular und tragen in jedes Feld etwas ein und senden es ab.&lt;/p>
+&lt;h2 id="prüfung-und-export-als-pdf">Prüfung und Export als pdf&lt;/h2>
+&lt;p>Jetzt befindet sich ein neues Dokument im festgelegten Ordner. Für jeden neuen Formulareintrag, wird ein neues Dokument erstellt und entsprechend der Formulareingaben benannt. So ist es einfach und schnell mehrere Bewerbungen vorzubereiten.&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img src="https://media.giphy.com/media/12NUbkX6p4xOO4/giphy.gif" alt="it&amp;amp;rsquo;s like magic" loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Platzhalteresetzungen" srcset="
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/platzhalter-ersetzungen_hu6ac592f1c16dd139d25ece2f6815fef4_394196_441604412191b667f890d82c352e0f9b.webp 400w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/platzhalter-ersetzungen_hu6ac592f1c16dd139d25ece2f6815fef4_394196_ee78a0e7121335755556c6ed47c91190.webp 760w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/platzhalter-ersetzungen_hu6ac592f1c16dd139d25ece2f6815fef4_394196_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://axell-de.github.io/pr-preview/5/pr-preview/5/post/formularbasierte-bewerbungsschreiben/platzhalter-ersetzungen_hu6ac592f1c16dd139d25ece2f6815fef4_394196_441604412191b667f890d82c352e0f9b.webp"
+width="685"
+height="760"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Für den Versand besteht auch die Möglichkeit der Automatisierung. Für uns reicht heute aber der Download des Dokuments als PDF.
+&lt;figure >
+&lt;div class="d-flex justify-content-center">
+&lt;div class="w-100" >&lt;img alt="Download" srcset="
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/export_hu75d7a98148a5033194ae906ed2f596ff_197119_62ff8712adedd828b319ddadb6746568.webp 400w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/export_hu75d7a98148a5033194ae906ed2f596ff_197119_7b8b3b2e7c9388b2e86ea739b3d6500e.webp 760w,
+/pr-preview/5/post/formularbasierte-bewerbungsschreiben/export_hu75d7a98148a5033194ae906ed2f596ff_197119_1200x1200_fit_q75_h2_lanczos_3.webp 1200w"
+src="https://axell-de.github.io/pr-preview/5/pr-preview/5/post/formularbasierte-bewerbungsschreiben/export_hu75d7a98148a5033194ae906ed2f596ff_197119_62ff8712adedd828b319ddadb6746568.webp"
+width="760"
+height="689"
+loading="lazy" data-zoomable />&lt;/div>
+&lt;/div>&lt;/figure>
+&lt;/p>
+&lt;p>Die Automatisierung habe ich genutzt um mir einen Arbeitsschritt leichter zu machen. Die sorgfältige Bearbeitung und passgenauigkeit Ihrer Bewerbungsunterlagen sollten Sie dennoch stets beachten, also:&lt;/p>
+&lt;h1 id="setzen-sie-auf-klasse-statt-masse">Setzen Sie auf Klasse statt Masse!&lt;/h1>
+&lt;h2 id="to-do">To-Do&lt;/h2>
+&lt;p>Gedankenstütze und weitere Möglichkeiten dieser Automatisierung:&lt;/p>
+&lt;ul>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Zusammenstellung der Vorlage&lt;/li>
+&lt;li>&lt;input checked="" disabled="" type="checkbox"> Formularbasierte Dokumentenerstellung&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Automatische PDF Generierung&lt;/li>
+&lt;li>&lt;input disabled="" type="checkbox"> Rechtschreibprüfung und automatisierter Versand&lt;/li>
+&lt;/ul></description></item><item><title>Virtueller Campus digitale Lehre</title><link>https://axell-de.github.io/pr-preview/5/talk/virtueller-campus-digitale-lehre/</link><pubDate>Mon, 30 Mar 2020 13:30:00 +0000</pubDate><guid>https://axell-de.github.io/pr-preview/5/talk/virtueller-campus-digitale-lehre/</guid><description/></item><item><title>NØRD - Digitalkongress in MV</title><link>https://axell-de.github.io/pr-preview/5/talk/n%C3%B8rd-digitalkongress-in-mv/</link><pubDate>Thu, 07 Nov 2019 08:30:00 +0100</pubDate><guid>https://axell-de.github.io/pr-preview/5/talk/n%C3%B8rd-digitalkongress-in-mv/</guid><description>&lt;p>&lt;span style="color:red">Bilder s.u.&lt;/span>&lt;/p>
+&lt;p>Im Rahmen des ersten Digitalkongresses „NØRD“ finden am 07.11.2019 landesweit Tagesveranstaltungen zu verschiedenen Themen rund um die Digitalisierung in Mecklenburg-Vorpommern statt. In Rostock lautet ein Thema: &lt;strong>&amp;ldquo;Forschung und Lehre im digitalen Wandel&amp;rdquo;&lt;/strong>.&lt;/p>
+&lt;p>Das spricht mich natürlich sofort an - angemeldet und zack: ich werde das Konzept und die Infrastruktur von &lt;a href="www.opengeoedu.de">OpenGeoEdu&lt;/a> präsentieren und in einem Workshop mit den Teilnehmenden über Einsatzmöglichkeiten, Erweiterungen und Verbesserungen reden.&lt;/p>
+&lt;p>Einfach &lt;a href="https://www.digitalesmv.de/noerd/anmeldung" target="_blank" rel="noopener">hier anmelden &lt;/a>und mitreden. Bis bald in Rostock!&lt;/p>
+&lt;hr>
+&lt;span style="color:red">Edit:&lt;/span> Das war ein sehr spannender Tag mit vielen Einblicken und interessanten Gespräche mit Digitalisierungsbegeisterten aus Mecklenburg-vorpommern.
+&lt;div class="gallery-grid">
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/172845.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/172845_hu813b29a23abe002da186068056651c19_4791616_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="172845.jpg" width="563" height="750">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/172854.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/172854_hu6308c9e544df71e3223ec3ea43d9f9e7_3711579_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="172854.jpg" width="563" height="750">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/183704.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/183704_huda576d698ac4fd072f42fe91f6c0e080_3870339_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="183704.jpg" width="563" height="750">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/185636.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/185636_huc0410cc50bdee5f545e4d1e01e14eb11_1918116_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="185636.jpg" width="563" height="750">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_092100.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_092100_hu06a24cdd70a02c7a4a06c4ae507ebdb4_2938114_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_092100.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_092112.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_092112_hu95dedf190c3c720bd2b2a0adbfe62482_4402422_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_092112.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_095842.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_095842_hua25678e68859f429af704eb03b33a071_2999445_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_095842.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_100211.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_100211_hu14ced3218c8f21aa53d45f87c6e0c83d_3401478_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_100211.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_102135.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_102135_huac56c7de96fc9078d8745fca5cce8929_4319534_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_102135.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_102702_MP.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_102702_MP_huc45c0781dfeadf0642b2727f3255998b_4613840_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_102702_MP.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_135740.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_135740_hu0e72aa6c0d653efb9b701971bc27ffd6_4206739_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_135740.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_164943.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_164943_hueab4304ffa76dd8a9a1610b52def8952_4645598_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_164943.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_173333.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_173333_hu716e7c39ae9de8077b2760ddd8499b1a_2768787_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_173333.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;div class="gallery-item gallery-item--medium">
+&lt;a data-fancybox="gallery-noerd19" href="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_202938.jpg" >
+&lt;img src="https://axell-de.github.io/pr-preview/5/pr-preview/5/media/albums/noerd19/IMG_20191107_202938_hueb581680ef0752bbf9db4eccd0ce6e33_3751282_750x750_fit_q75_h2_lanczos.webp" loading="lazy" alt="IMG_20191107_202938.jpg" width="750" height="563">
+&lt;/a>
+&lt;/div>
+&lt;/div></description></item><item><title>Junger Kongress für Geographie (JKG)</title><link>https://axell-de.github.io/pr-preview/5/talk/jkg19/</link><pubDate>Thu, 26 Sep 2019 12:15:00 +0000</pubDate><guid>https://axell-de.github.io/pr-preview/5/talk/jkg19/</guid><description>&lt;p>Ich leite den Workshop im Programm des Jungen Kongresses für Geographie zum Thema offene Geodaten in Lehre und Forschung.&lt;/p>
+&lt;p>In dem Workshop stelle ich den offenen Online-Kurs OpenGeoEdu vor und erarbeite gemeinsam mit den Teilnehmenden die Passfähigkeit und Ideen zur Weiterentwicklung des Online-Kurses&lt;/p>
+&lt;div class="responsive-wrap">
+&lt;iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQmwEL8vs-XdA3XTBlTGIo_HzVNtCK99ai37lWX5aAfp0TUO1NZG2xLAv7OsyFMwSp2jjBxXuHJkHOx/embed?start=false&amp;amp;loop=false&amp;amp;delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">&lt;/iframe>
+&lt;/div></description></item><item><title>OpenGeoEdu - mit offenen Daten lernen</title><link>https://axell-de.github.io/pr-preview/5/publication/fossgis2019/</link><pubDate>Thu, 04 Jul 2019 21:19:54 +0000</pubDate><guid>https://axell-de.github.io/pr-preview/5/publication/fossgis2019/</guid><description>&lt;p>S.98 - 100&lt;/p></description></item><item><title>GeoForum MV 2019</title><link>https://axell-de.github.io/pr-preview/5/talk/geoforum-mv-2019/</link><pubDate>Mon, 08 Apr 2019 14:32:11 +0200</pubDate><guid>https://axell-de.github.io/pr-preview/5/talk/geoforum-mv-2019/</guid><description>&lt;p>Am 8. und 9. April 2019 fand zum 15. mal die Konferenz mit dem Untertitel „Geoinformation in allen Lebenslagen“ statt.
+Ich präsentierte hier OpenGeoEdu, den MOOC zu offenen Daten und Geo-Informationssystemen.&lt;/p>
+&lt;p>Zu allen Vorträgen inklusive der Präsentationsfolien geht’s hier:&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="http://www.geomv.de/geoforum-mv-2019-beitraege/" target="_blank" rel="noopener">http://www.geomv.de/geoforum-mv-2019-beitraege/&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Forschungscamp Universität Rostock 2018</title><link>https://axell-de.github.io/pr-preview/5/publication/posterforschungscamp2018/</link><pubDate>Sun, 04 Nov 2018 21:03:34 +0000</pubDate><guid>https://axell-de.github.io/pr-preview/5/publication/posterforschungscamp2018/</guid><description/></item><item><title>Offene Daten für Lehre und Forschung in raumbezogenen Studiengängen – OpenGeoEdu</title><link>https://axell-de.github.io/pr-preview/5/publication/gisscience1_2018/</link><pubDate>Fri, 04 May 2018 23:04:41 +0200</pubDate><guid>https://axell-de.github.io/pr-preview/5/publication/gisscience1_2018/</guid><description/></item><item><title>Forschungscamp Universität Rostock 2017</title><link>https://axell-de.github.io/pr-preview/5/publication/posterforschungscamp2017/</link><pubDate>Sat, 04 Nov 2017 21:03:29 +0000</pubDate><guid>https://axell-de.github.io/pr-preview/5/publication/posterforschungscamp2017/</guid><description/></item></channel></rss>

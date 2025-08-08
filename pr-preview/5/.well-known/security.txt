@@ -1,0 +1,15 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA256
+
+Contact: mailto:webmaster@axell.de
+Expires: 2029-03-10T11:59:00.000Z
+Encryption: https://axell.de/pgp-key.txt
+Preferred-Languages: de, en
+Canonical: https://axell.de/.well-known/security.txt
+-----BEGIN PGP SIGNATURE-----
+
+iIkEARYIADEqHEF4ZWwgTG9yZW56ZW4tWmFiZWwgIDx3ZWJtYXN0ZXJAYXhlbGwu
+ZGU+BQJolbkuAAoJEJKz1W917BTzLnMA/iopEii2mXW6JlulpFzUPOpLGwNmzOsl
+lU0WKwEeGSdsAQCAPjVtGWLguLUOd1IGVT0tmgOks2OQFQNNKeVF1oEKDQ==
+=RxQi
+-----END PGP SIGNATURE-----

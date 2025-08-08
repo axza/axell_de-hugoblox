@@ -1,0 +1,88 @@
+==================================================================
+https://keybase.io/oellph
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://axell.de
+  * I am oellph (https://keybase.io/oellph) on keybase.
+  * I have a public key with fingerprint 49A4 4BEF B55E 673F 0A9E  032A 5FB9 5D34 759B 1E7F
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01206c94e30f8a8aacdf2725797a71a314c24ed80344258719ec6b363c6686e0a08a0a",
+      "fingerprint": "49a44befb55e673f0a9e032a5fb95d34759b1e7f",
+      "host": "keybase.io",
+      "key_id": "5fb95d34759b1e7f",
+      "kid": "010101f2ce7a6a8a832edc1491b19d61e3d1d09d57aa57984c53fc36f016a41591e00a",
+      "uid": "f756053b3fa5fa137811084b0247b519",
+      "username": "oellph"
+    },
+    "merkle_root": {
+      "ctime": 1715150059,
+      "hash_meta": "754a49479c615566e8de009308bfc3af97ce945581740add834ca60ca77319af",
+      "seqno": 25707511
+    },
+    "revoke": {
+      "sig_ids": [
+        "4e166a54655707a9acf11e21636fd5967725c50c2b3464768adb96842d8aef9f0f"
+      ]
+    },
+    "service": {
+      "hostname": "axell.de",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1715150061,
+  "expire_in": 157680000,
+  "prev": "b9cc45d6ae32a22c59f3cde795b52144f3031ac47837c20bc10a8bd957543970",
+  "seqno": 24,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMP7AnicbZN7bBRFHMevaHk0UmgaH4GGx3oxQkuZ2ZnZ2bkGG4MkgI9QeRyUtpfZ
+3dn2eu1duRc96wVMESLKS5TwkFYUrcHwkEYuPBOQFtqKvFONGIMiKZQmPEKlAtXZ
+BhJj3P1js5Pv7/v7/L4zc3z4E66MNN/+UhzbMmZJWsexRTGXXZDTU6cYISuheOqU
+gBj4iCpLRKK+gN9SPAqAKtBMhgUCts51zk3LVqlKKKOcQo4gNlUsLB0gjFWiU8iE
+qRlIQ6am6ZoAHOgccCVPsf3BchGuCfuDUWmLGcfYELZBiNAosgFnAiCVE9tgxEKY
+EmZAQW1ZWBGKOBUSzuARke8PyTX54xvA+x/9Y27ntVVTUK5Jbh2pwjIhZtCAzNKg
+QBa0ALMI5VwOo2OTINtEmg2gxjEkDAowwB0bsLMp0QBBBrIlIoeI6hACHRtAxdQg
+kDnCiAgHebWQ6pCoqqqpUJJ5SrUIB6qELxwKRZ1ozajfEUAKCSQAECbH45EKX7WI
+cllHCeaYYcpMDRKiaUK3JAVDQDckG7cZNQXDhOiQYsAtS0fY5BowOaUIMu5MHxGL
+giHFIzcIUAKhRAiLeCggnO4Rf7lMLaJ4FipYQE3jBGvEEXLGTRtCoUJNJmARplG5
+xSYBpmogrGGq6dwymKZj1dK5sJkNbKU06XQLx/3mgLmzTY/G57Vy/nxLSJyacCga
+MkNVcrUiGq2JeJxQookaR7ZYGL5HBj7DH7TkAZEVcRGO+ENBGZJU/icvDeYporbG
+HxY+v6MgEgzIx+kj4tLSYKaJiaVxIc+SqpqE2ci0BGXEICrE2EYAQW5iqiNqqsAw
+IeC6YTEik0eMgn8FiCUnL5eeMrUgj8bCQkkeO1rypCstwzU4fZBzc1wZw0Y+vk8T
+Gkf0k8Hls/sDm7ew5t9+zdpZ1rly994Dhb0d6RfeWvZN04VtonqWSC6Y4SVDd39h
+uwn6e77rRoMfr/049FpWfoYne/0ww/r2zfGtoOjQ6obKaVu2b1wZa15xa1xi+p41
+N2Ydz5pRsHNO7Wftp3/y9f3gKip2uQv/2ntqubiTOtqkFC6dN2ps9VM7F7d5N5/K
+iI8anVV/KNEyJ3P00s4bxU1/vPFBgOUVrVqXe73s+/p3684k7h3ujc/KbB9fmrXp
+/o4r9RdLEp9+1OcuHa5dK1vV8N21tO2ld0f8PLlxw5c5cw9uuN480X3Xm/7VWvN0
+7kqamBRddsFqvVzmfRW2eMfMXdQSPPzw633z1uS9n3Zo5J6rV8Z/0nvwbNvG7MLY
+7ejUXbWpyf5Bna33xgWfjz8Ta8ts7LvYVdJ78JWyi6lNcGjzc2+bD7PruneP7T68
+YkLL1puj5i585+HT7f0LVl/3NtyJ9Hkaz87vv3y+v753yY+J9vO4cs+86UW9y2dP
+7QhNujZkweLkpd/nj3uw/kzu+eTYW5eW3d70UmfqxIOkSMXWTfkzqyen+0zOC1Ny
+7qNdS34pLPMd8b63L3NfV3os46Q3/8CQmRN7UiUfVk5IbDv5euDE1qOp4rqbn9+d
+9uJMtKPkyv7s1tzYyap1J7LVjiORc2j2pPw7ZeDcnK5bxeTZ6a6Cq13uwFZ3z8tN
+lWKXr6Ct+6r7HwFd/6s=
+=OvB2
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/oellph
+
+==================================================================
