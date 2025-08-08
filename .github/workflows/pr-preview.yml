@@ -1,4 +1,5 @@
 name: Deploy PR Preview to GitHub Pages
+
 env:
   WC_HUGO_VERSION: '0.124.1'
 
