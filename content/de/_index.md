@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: 2024-05-7
+date: 2024-05-07
 type: landing
 
 editable: true
