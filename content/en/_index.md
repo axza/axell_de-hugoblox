@@ -284,6 +284,10 @@ sections:
           icon_pack: fas
           name: threema.id/DBXYVN39
           link: 'https://threema.id/DBXYVN39'
+        - icon: shield-halved
+          icon_pack: fas
+          name: 'PGP-Mail to Webmaster 📧🔒'
+          link: '/pgp-key.txt'
 
       # Automatically link email and phone or display as text?
       autolink: true
