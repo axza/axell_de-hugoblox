@@ -64,7 +64,7 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: "Senior DevOps Engineer"
+        - title: "Senior DevOps Engineer && DevOps Teamlead"
           company: "‍Innovations- und Digitalagentur (ida) GmbH"
           company_url: "https://ida.me"
           company_logo: "org-ida"
