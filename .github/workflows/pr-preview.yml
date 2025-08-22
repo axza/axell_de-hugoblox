@@ -40,7 +40,7 @@ jobs:
           hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/pr-preview/${{ github.event.number }}/"
 
       - name: Upload PR preview artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./public
 
