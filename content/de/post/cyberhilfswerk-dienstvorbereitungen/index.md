@@ -20,7 +20,7 @@ Nach Rezeption folgender anregenden Gesprächskonserven
 
 verspürte ich einen starken Drang mich einzubringen.  
 
-Der erste Schritt, die Markierung von einzusetzenden Werkzeugen, mit Kennzeichnungselementen des Cyberrettungsdienstes, ist erfolgt. Danke an [@HonkHase](https://twitter.com/HonkHase) für den zügigen Vollzug.
+Der erste Schritt, die Markierung von einzusetzenden Werkzeugen, mit Kennzeichnungselementen des Cyberrettungsdienstes, ist erfolgt. Danke an [@HonkHase](https://chaos.social/@HonkHase) für den zügigen Vollzug.
 
 
 
